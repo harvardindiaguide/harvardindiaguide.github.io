@@ -1,4 +1,4 @@
-# 🇮🇳 Harvard India Guide
+# Harvard India Guide
 
 A community-driven, open-source guide for Indian students at Harvard University.
 
