@@ -1,0 +1,67 @@
+temples:
+  - name: "Sri Lakshmi Temple"
+    location: "Ashland, MA"
+    distance: "25 miles from Harvard"
+    denomination: "Hindu (All deities)"
+    description: "Beautiful temple with regular pujas and festivals"
+    transportation: "Car needed (organize carpools)"
+    timings: "Daily 9 AM - 9 PM"
+    special_events:
+      - "Diwali"
+      - "Navaratri"
+      - "Shivaratri"
+    website: "Check temple website for current timings"
+
+  - name: "Hindu Temple of NH"
+    location: "Nashua, NH"
+    distance: "40 miles from Harvard"
+    denomination: "Hindu"
+    description: "Active temple with regular programs"
+    transportation: "Car needed"
+
+mosques:
+  - name: "Islamic Society of Boston Cultural Center"
+    location: "Roxbury, Boston"
+    distance: "5 miles from Harvard"
+    description: "Large mosque with daily prayers and programs"
+    prayer_times: "All 5 daily prayers"
+    special_services:
+      - "Jummah every Friday"
+      - "Ramadan programs"
+      - "Sunday school"
+    transportation: "Accessible by T (Orange Line)"
+
+  - name: "Harvard Islamic Society Prayer Space"
+    location: "On Harvard Campus"
+    description: "Prayer space for students on campus"
+    notes: "Check HIS for location and access"
+
+yoga_wellness:
+  - name: "Harvard Recreation - Yoga Classes"
+    location: "Harvard Campus"
+    description: "Free yoga classes for Harvard students"
+    types:
+      - "Hatha Yoga"
+      - "Vinyasa"
+      - "Meditation sessions"
+    access: "Included in student fees"
+
+  - name: "Down Under Yoga"
+    location: "Harvard Square"
+    distance: "Walking distance"
+    description: "Professional yoga studio with various styles"
+    price: "Paid classes, student discounts available"
+    types:
+      - "Hot Yoga"
+      - "Vinyasa"
+      - "Yin Yoga"
+
+  - name: "Cambridge Insight Meditation Center"
+    location: "Cambridge, MA"
+    distance: "2 miles from Harvard"
+    description: "Vipassana meditation center with free programs"
+    offerings:
+      - "Daily meditation sessions"
+      - "Weekend retreats"
+      - "Dharma talks"
+    cost: "Donation-based"

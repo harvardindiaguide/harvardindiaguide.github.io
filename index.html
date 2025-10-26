@@ -1,0 +1,473 @@
+---
+layout: default
+title: Harvard India Guide
+---
+
+<div class="hero">
+  <h1>🇮🇳 Harvard India Guide</h1>
+  <p class="subtitle">A community-driven guide for Indian students at Harvard</p>
+</div>
+
+<nav class="section-nav">
+  <a href="#food" class="nav-pill">🍛 Food</a>
+  <a href="#community" class="nav-pill">👥 Community</a>
+  <a href="#places" class="nav-pill">🕉️ Places & Wellness</a>
+  <a href="#practical" class="nav-pill">📋 Practical Info</a>
+</nav>
+
+<!-- Food Section -->
+<section id="food" class="section">
+  <h2>🍛 Food & Dining</h2>
+  
+  <div class="subsection">
+    <h3>Indian Restaurants</h3>
+    <div class="card-grid">
+      {% for restaurant in site.data.food.restaurants %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ restaurant.name }}</h4>
+          <span class="badge">{{ restaurant.type }}</span>
+        </div>
+        <p class="description">{{ restaurant.description }}</p>
+        <div class="meta">
+          <span>📍 {{ restaurant.distance }}</span>
+          <span>💰 {{ restaurant.price }}</span>
+          {% if restaurant.vegetarian_friendly %}
+          <span class="tag-veg">🌱 Veg Friendly</span>
+          {% endif %}
+        </div>
+        {% if restaurant.highlights %}
+        <div class="highlights">
+          <strong>Must Try:</strong>
+          <ul>
+            {% for item in restaurant.highlights %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Grocery Stores</h3>
+    <div class="card-grid">
+      {% for store in site.data.food.grocery_stores %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ store.name }}</h4>
+        </div>
+        <p class="description">{{ store.description }}</p>
+        <div class="meta">
+          <span>📍 {{ store.distance }}</span>
+        </div>
+        {% if store.offerings %}
+        <div class="highlights">
+          <strong>Available:</strong>
+          <ul>
+            {% for item in store.offerings %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Campus Dining Tips</h3>
+    <div class="card-grid">
+      {% for dining in site.data.food.campus_dining %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ dining.name }}</h4>
+        </div>
+        <p class="description">{{ dining.description }}</p>
+        {% if dining.tips %}
+        <ul class="tips-list">
+          {% for tip in dining.tips %}
+          <li>{{ tip }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Community Section -->
+<section id="community" class="section">
+  <h2>👥 Community & Organizations</h2>
+  
+  <div class="subsection">
+    <h3>Student Organizations</h3>
+    <div class="card-grid">
+      {% for org in site.data.community.student_organizations %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ org.name }}</h4>
+        </div>
+        <p class="description">{{ org.description }}</p>
+        {% if org.contact %}
+        <div class="meta">
+          <span>📧 {{ org.contact }}</span>
+        </div>
+        {% endif %}
+        {% if org.activities %}
+        <div class="highlights">
+          <strong>Activities:</strong>
+          <ul>
+            {% for activity in org.activities %}
+            <li>{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Religious Groups</h3>
+    <div class="card-grid">
+      {% for group in site.data.community.religious_groups %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ group.name }}</h4>
+        </div>
+        <p class="description">{{ group.description }}</p>
+        {% if group.activities %}
+        <div class="highlights">
+          <strong>Activities:</strong>
+          <ul>
+            {% for activity in group.activities %}
+            <li>{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Sports & Recreation</h3>
+    <div class="card-grid">
+      {% for sport in site.data.community.sports_recreation %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ sport.name }}</h4>
+        </div>
+        <p class="description">{{ sport.description }}</p>
+        {% if sport.activities %}
+        <ul class="tips-list">
+          {% for activity in sport.activities %}
+          <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Places & Wellness Section -->
+<section id="places" class="section">
+  <h2>🕉️ Places of Worship & Wellness</h2>
+  
+  <div class="subsection">
+    <h3>Temples</h3>
+    <div class="card-grid">
+      {% for temple in site.data.places.temples %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ temple.name }}</h4>
+          <span class="badge">{{ temple.denomination }}</span>
+        </div>
+        <p class="description">{{ temple.description }}</p>
+        <div class="meta">
+          <span>📍 {{ temple.distance }}</span>
+          <span>🚗 {{ temple.transportation }}</span>
+        </div>
+        {% if temple.timings %}
+        <p><strong>Timings:</strong> {{ temple.timings }}</p>
+        {% endif %}
+        {% if temple.special_events %}
+        <div class="highlights">
+          <strong>Special Events:</strong>
+          <ul>
+            {% for event in temple.special_events %}
+            <li>{{ event }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Mosques</h3>
+    <div class="card-grid">
+      {% for mosque in site.data.places.mosques %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ mosque.name }}</h4>
+        </div>
+        <p class="description">{{ mosque.description }}</p>
+        <div class="meta">
+          {% if mosque.distance %}
+          <span>📍 {{ mosque.distance }}</span>
+          {% endif %}
+          {% if mosque.transportation %}
+          <span>🚇 {{ mosque.transportation }}</span>
+          {% endif %}
+        </div>
+        {% if mosque.prayer_times %}
+        <p><strong>Prayers:</strong> {{ mosque.prayer_times }}</p>
+        {% endif %}
+        {% if mosque.special_services %}
+        <div class="highlights">
+          <strong>Services:</strong>
+          <ul>
+            {% for service in mosque.special_services %}
+            <li>{{ service }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Yoga & Wellness</h3>
+    <div class="card-grid">
+      {% for place in site.data.places.yoga_wellness %}
+      <div class="card">
+        <div class="card-header">
+          <h4>{{ place.name }}</h4>
+        </div>
+        <p class="description">{{ place.description }}</p>
+        <div class="meta">
+          {% if place.distance %}
+          <span>📍 {{ place.distance }}</span>
+          {% endif %}
+          {% if place.price %}
+          <span>💰 {{ place.price }}</span>
+          {% endif %}
+          {% if place.access %}
+          <span>✓ {{ place.access }}</span>
+          {% endif %}
+          {% if place.cost %}
+          <span>💰 {{ place.cost }}</span>
+          {% endif %}
+        </div>
+        {% if place.types %}
+        <div class="highlights">
+          <strong>Types:</strong>
+          <ul>
+            {% for type in place.types %}
+            <li>{{ type }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if place.offerings %}
+        <div class="highlights">
+          <strong>Offerings:</strong>
+          <ul>
+            {% for offering in place.offerings %}
+            <li>{{ offering }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Practical Info Section -->
+<section id="practical" class="section">
+  <h2>📋 Practical Information</h2>
+  
+  <div class="subsection">
+    <h3>First Week Essentials</h3>
+    {% for item in site.data.practical.first_week %}
+    <div class="info-block">
+      <h4>{{ item.category }}</h4>
+      {% for task in item.items %}
+      <div class="card">
+        <div class="card-header">
+          <h5>{{ task.task }}</h5>
+        </div>
+        <p class="description">{{ task.details }}</p>
+        {% if task.tips %}
+        <ul class="tips-list">
+          {% for tip in task.tips %}
+          <li>{{ tip }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if task.essentials %}
+        <div class="highlights">
+          <strong>Essentials:</strong>
+          <ul>
+            {% for essential in task.essentials %}
+            <li>{{ essential }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if task.where_to_buy %}
+        <div class="highlights">
+          <strong>Where to buy:</strong>
+          <ul>
+            {% for place in task.where_to_buy %}
+            <li>{{ place }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="subsection">
+    <h3>Transportation</h3>
+    {% for item in site.data.practical.transportation %}
+    <div class="info-block">
+      <h4>{{ item.category }}</h4>
+      {% if item.options %}
+      <div class="card-grid">
+        {% for option in item.options %}
+        <div class="card">
+          <div class="card-header">
+            <h5>{{ option.method }}</h5>
+          </div>
+          {% if option.cost %}
+          <p class="meta"><strong>Cost:</strong> {{ option.cost }}</p>
+          {% endif %}
+          {% if option.details %}
+          <p>{{ option.details }}</p>
+          {% endif %}
+          {% if option.tips %}
+          <p class="tip">💡 {{ option.tips }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if item.tips %}
+      <ul class="tips-list">
+        {% for tip in item.tips %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="subsection">
+    <h3>Healthcare</h3>
+    {% for item in site.data.practical.healthcare %}
+    <div class="info-block">
+      <h4>{{ item.category }}</h4>
+      {% if item.resources %}
+      <div class="card-grid">
+        {% for resource in item.resources %}
+        <div class="card">
+          <div class="card-header">
+            <h5>{{ resource.resource }}</h5>
+          </div>
+          <p class="description">{{ resource.details }}</p>
+          {% if resource.coverage %}
+          <p class="tip">✓ {{ resource.coverage }}</p>
+          {% endif %}
+          {% if resource.tips %}
+          <p class="tip">💡 {{ resource.tips }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if item.tips %}
+      <ul class="tips-list">
+        {% for tip in item.tips %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="subsection">
+    <h3>Dealing with Homesickness</h3>
+    {% for item in site.data.practical.homesickness %}
+    <div class="info-block">
+      <h4>{{ item.category }}</h4>
+      {% if item.tips %}
+      <ul class="tips-list">
+        {% for tip in item.tips %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if item.ideas %}
+      <ul class="tips-list">
+        {% for idea in item.ideas %}
+        <li>{{ idea }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if item.resources %}
+      <ul class="tips-list">
+        {% for resource in item.resources %}
+        <li>{{ resource }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Contribute Section -->
+<section id="contribute" class="section contribute-section">
+  <h2>🤝 Contribute to This Guide</h2>
+  <p>This is an open-source, community-driven project. Help make it better!</p>
+  <div class="contribute-box">
+    <h3>How to Add/Edit Information</h3>
+    <ol>
+      <li>Visit our <a href="https://github.com/harvardindia/harvardindiaguide.github.io" target="_blank">GitHub repository</a></li>
+      <li>All content is stored in easy-to-edit YAML files in the <code>_data/</code> folder</li>
+      <li>Edit the files directly on GitHub (click the pencil icon) or submit a pull request</li>
+      <li>Your changes will appear on the website automatically!</li>
+    </ol>
+    <p class="tip">💡 No coding knowledge needed - just edit the YAML files like a simple list!</p>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ by the Harvard Indian community</p>
+  <p>
+    <a href="https://github.com/harvardindia/harvardindiaguide.github.io" target="_blank">View on GitHub</a> |
+    <a href="https://github.com/harvardindia/harvardindiaguide.github.io/issues" target="_blank">Report an Issue</a>
+  </p>
+</footer>

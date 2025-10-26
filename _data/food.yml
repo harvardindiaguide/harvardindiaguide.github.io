@@ -1,0 +1,72 @@
+restaurants:
+  - name: "Tanjore"
+    type: "South Indian"
+    location: "Cambridge, MA"
+    distance: "2 miles from Harvard Square"
+    description: "Authentic South Indian cuisine with great dosas and uttapams"
+    price: "$$"
+    vegetarian_friendly: true
+    highlights:
+      - "Masala Dosa"
+      - "Filter Coffee"
+      - "Lunch Buffet"
+
+  - name: "Dosa Factory"
+    type: "South Indian"
+    location: "Cambridge, MA"
+    distance: "1.5 miles from Harvard Square"
+    description: "Casual spot for dosas and South Indian street food"
+    price: "$"
+    vegetarian_friendly: true
+    highlights:
+      - "Pani Puri"
+      - "Different Dosa varieties"
+
+  - name: "Rangoli"
+    type: "North Indian"
+    location: "Cambridge, MA"
+    distance: "3 miles from Harvard"
+    description: "North Indian restaurant with good curries and biryanis"
+    price: "$$"
+    vegetarian_friendly: true
+    highlights:
+      - "Butter Chicken"
+      - "Paneer dishes"
+      - "Biryani"
+
+grocery_stores:
+  - name: "India Market"
+    location: "Cambridge, MA"
+    distance: "2.5 miles from Harvard Square"
+    description: "Well-stocked Indian grocery with fresh vegetables, spices, and frozen foods"
+    offerings:
+      - "Fresh vegetables (karela, bhindi, etc.)"
+      - "All Indian spices and masalas"
+      - "Frozen Indian snacks"
+      - "Rice and lentils in bulk"
+      - "Indian sweets"
+    
+  - name: "Patel Brothers"
+    location: "Waltham, MA"
+    distance: "10 miles (needs car/uber)"
+    description: "Large Indian supermarket chain with everything you need"
+    offerings:
+      - "Widest selection in the area"
+      - "Fresh Indian produce"
+      - "Halal meat section"
+      - "Kitchen supplies and cookware"
+
+campus_dining:
+  - name: "Annenberg Hall"
+    description: "Freshman dining hall with regular vegetarian options"
+    tips:
+      - "Salad bar always available"
+      - "Vegetarian entrees daily"
+      - "Rice and beans usually available"
+    
+  - name: "Harvard Square Restaurants"
+    description: "Various options around campus"
+    tips:
+      - "Chipotle - Good for vegetarians (sofritas)"
+      - "Sweetgreen - Fresh salads"
+      - "Clover Food Lab - Vegetarian fast casual"

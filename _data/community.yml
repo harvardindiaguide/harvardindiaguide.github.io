@@ -1,0 +1,54 @@
+student_organizations:
+  - name: "South Asian Association (SAA)"
+    description: "Main student organization for South Asian students at Harvard"
+    contact: "saa@harvard.edu"
+    activities:
+      - "Cultural events and celebrations"
+      - "Diwali and Holi celebrations"
+      - "Social gatherings"
+      - "Mentorship programs"
+    
+  - name: "Harvard Ghungroo"
+    description: "Annual South Asian cultural show featuring music, dance, and drama"
+    contact: "ghungroo@harvard.edu"
+    activities:
+      - "Annual spring show"
+      - "Dance workshops"
+      - "Cultural performances"
+
+  - name: "Harvard Tarana"
+    description: "South Asian a cappella group"
+    activities:
+      - "Performances throughout the year"
+      - "Auditions each semester"
+
+religious_groups:
+  - name: "Harvard Hindu Students Association"
+    description: "Community for Hindu students"
+    activities:
+      - "Weekly gatherings"
+      - "Festival celebrations"
+      - "Spiritual discussions"
+    
+  - name: "Harvard Islamic Society"
+    description: "Community for Muslim students"
+    activities:
+      - "Daily prayers"
+      - "Jummah prayers on Fridays"
+      - "Ramadan iftars"
+      - "Islamic study circles"
+
+sports_recreation:
+  - name: "Harvard Cricket Club"
+    description: "Play cricket with fellow students"
+    activities:
+      - "Weekend matches"
+      - "Practice sessions"
+      - "Tournaments"
+    
+  - name: "Bollywood Dance"
+    description: "Multiple dance groups on campus"
+    activities:
+      - "Weekly practices"
+      - "Performances at events"
+      - "Beginner-friendly classes"

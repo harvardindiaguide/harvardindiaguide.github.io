@@ -1,0 +1,111 @@
+first_week:
+  - category: "Mobile Phone"
+    items:
+      - task: "Get a US SIM card"
+        details: "Visit T-Mobile, AT&T, or Verizon stores in Harvard Square"
+        tips:
+          - "Student plans available"
+          - "Bring passport and I-20"
+          - "Consider prepaid plans initially"
+      
+      - task: "Keep Indian number active"
+        details: "Use for 2FA and family contact"
+        tips:
+          - "Airtel/Jio international roaming"
+          - "Or minimum recharge to keep active"
+
+  - category: "Banking"
+    items:
+      - task: "Open a US bank account"
+        details: "Bank of America and TD Bank near Harvard Square"
+        tips:
+          - "Bring passport, I-20, and proof of Harvard enrollment"
+          - "Ask about student accounts (no minimum balance)"
+          - "Get a debit card immediately"
+      
+      - task: "Money transfer setup"
+        details: "Set up Wise/Remitly for India transfers"
+        tips:
+          - "Better rates than traditional banks"
+          - "Useful for sending money home"
+
+  - category: "Winter Clothing"
+    items:
+      - task: "Buy warm clothes"
+        details: "Boston winters are harsh (-15°C common)"
+        essentials:
+          - "Heavy winter jacket (puffer/parka)"
+          - "Warm boots (waterproof)"
+          - "Gloves, scarf, winter hat"
+          - "Thermal layers"
+        where_to_buy:
+          - "Uniqlo (Harvard Square) - affordable"
+          - "Marshall's/TJ Maxx - discounted"
+          - "Wait for Labor Day sales"
+
+transportation:
+  - category: "Getting to Indian Stores"
+    options:
+      - method: "Uber/Lyft"
+        cost: "$15-25 round trip to India Market"
+        tips: "Split with friends"
+      
+      - method: "Zipcar"
+        cost: "$10-15/hour"
+        tips: "Good for grocery runs with friends"
+      
+      - method: "Public Transport"
+        details: "MBTA bus/train to some locations"
+        tips: "Get Charlie Card for discounted fares"
+
+  - category: "India Flights"
+    tips:
+      - "Book from Logan Airport (BOS)"
+      - "Common routes: Boston → NYC/Newark → India"
+      - "Best airlines: Air India, Emirates, Qatar, Lufthansa"
+      - "Book 2-3 months in advance for best prices"
+      - "Winter break flights book up fast"
+
+healthcare:
+  - category: "Finding Indian Doctors"
+    resources:
+      - resource: "Harvard University Health Services (HUHS)"
+        details: "On-campus health center"
+        coverage: "Included in student health insurance"
+      
+      - resource: "Zocdoc"
+        details: "Search for South Asian doctors by name"
+        tips: "Filter by insurance and location"
+      
+      - resource: "Indian American doctors in Boston"
+        details: "Many in Cambridge/Boston area"
+        tips: "Ask in student groups for recommendations"
+
+  - category: "Understanding US Healthcare"
+    tips:
+      - "Always check if provider is in-network"
+      - "Keep insurance card always"
+      - "Copay required for appointments"
+      - "Prescriptions much cheaper at Costco pharmacy"
+      - "Get flu shot annually (free)"
+
+homesickness:
+  - category: "Staying Connected"
+    tips:
+      - "WhatsApp video calls (schedule with family)"
+      - "Join Indian student groups immediately"
+      - "Cook Indian food with friends"
+      - "Attend Diwali, Holi celebrations"
+      - "Find your comfort food spots"
+  
+  - category: "Care Packages"
+    ideas:
+      - "Have family send: pickles, favorite snacks, masalas"
+      - "Use FedEx/DHL for reliable shipping"
+      - "Declare food items properly"
+
+  - category: "Mental Health"
+    resources:
+      - "Harvard Counseling and Mental Health Services (free)"
+      - "Peer support groups"
+      - "International student office support"

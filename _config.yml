@@ -1,0 +1,22 @@
+title: Harvard India Guide
+description: A community guide for Indian students at Harvard
+baseurl: ""
+url: "https://harvardindiaguide.github.io"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
