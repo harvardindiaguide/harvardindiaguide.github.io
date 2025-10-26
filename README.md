@@ -39,7 +39,7 @@ All the content is stored in easy-to-edit YAML files in the `_data/` folder:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/harvardindia/harvardindiaguide.github.io.git
+git clone https://github.com/harvardindiaguide/harvardindiaguide.github.io.git
 cd harvardindiaguide.github.io
 
 # Make your changes to YAML files in _data/
